@@ -1,12 +1,36 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import instagram from '../../assets/square-instagram.svg';
 import facebook from '../../assets/facebook.svg';
 import github from '../../assets/github.svg';
 import youtube from '../../assets/youtube.svg';
+import emailjs from '@emailjs/browser';
 
 import './contact.css';
 
 const Contact = () => {
+  // eslint-disable-next-line no-undef
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        'service_c0k5cl9',
+        'template_ay9j8bi',
+        form.current,
+        'lE7sqL89kvu-QPGLU'
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          e.target.reset();
+          alert('Email Sent!');
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
     <section id='contactPage'>
       <div id='contact'>
@@ -14,9 +38,19 @@ const Contact = () => {
         <span className='contactDesc'>
           Please fill out the form below to discuss any work oppertunities.
         </span>
-        <form className='contactForm'>
-          <input type='text' className='name' placeholder='Your Name' />
-          <input type='email' className='email' placeholder='Your Email' />
+        <form className='contactForm' ref={form} onSubmit={sendEmail}>
+          <input
+            type='text'
+            className='name'
+            placeholder='Your Name'
+            name='from_name'
+          />
+          <input
+            type='email'
+            className='email'
+            placeholder='Your Email'
+            name='to_name'
+          />
           <textarea
             className='msg'
             name='message'
