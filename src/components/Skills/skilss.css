@@ -1,0 +1,156 @@
+#skills {
+  overflow: hidden;
+  width: 100vw;
+  max-width: 70rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+.skillTitle {
+  font-size: 3rem;
+  font-weight: 600;
+  padding-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.skillDesc {
+  font-weight: 400;
+  font-size: 1rem;
+  max-width: 50rem;
+  padding: 0 2rem;
+}
+
+.skillBars {
+  margin: 1.5rem;
+  width: 100vw;
+  max-width: 80%;
+  text-align: left;
+}
+
+.skillBar {
+  display: flex;
+  margin: 1rem;
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+  background: rgb(25, 25, 25);
+}
+
+.skillBarImg {
+  object-fit: cover;
+  height: 3rem;
+  width: 3rem;
+  margin-right: 2rem;
+}
+
+.skillBarText > p {
+  font-size: 0.9rem;
+  font-weight: 200;
+}
+
+@media screen and (max-width: 720px) {
+  .skillBarText > p {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .skillBarText > p {
+    font-size: 3vw;
+  }
+  .skillBarImg {
+    height: 2.25rem;
+    width: 2.25rem;
+  }
+  .skillBarText > h2 {
+    font-size: 5vw;
+  }
+}
+
+/*#skillList {
+  overflow: hidden;
+  width: 100vw;
+  max-width: 70rem;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  display: inline-block;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.skillBox {
+  margin: 0.02;
+  width: 15vw;
+  height: 80rem;
+  max-width: 85%;
+  text-align: auto;
+  display: inline-block;
+}
+
+.frontEnd {
+  margin: 10px;
+  padding: 1.8rem 2rem;
+  border-radius: 0.5rem;
+  background: rgb(25, 25, 25);
+  width: 10vw;
+}
+
+.rounded-md {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  background: rgb(12, 12, 12);
+  border: solid;
+  border-color: rgba(59, 130, 246, 0.6);
+  border-width: 1px;
+  border-radius: 0.375rem;
+  width: max-content;
+}
+*/
+
+#skillList {
+  overflow: hidden;
+  width: 100vw;
+  max-width: 70rem;
+
+  margin: 0 auto;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: inline-block;
+}
+
+.frontEnd {
+  overflow: hidden;
+  margin: 10px;
+  padding: 1.8rem 2rem;
+  border-radius: 0.5rem;
+  background: rgb(25, 25, 25);
+
+  text-align: auto;
+  display: inline-block;
+}
+
+.rounded-md {
+  overflow: hidden;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  background: rgb(12, 12, 12);
+  border: solid;
+  border-color: rgba(59, 130, 246, 0.6);
+  border-width: 1px;
+  border-radius: 0.375rem;
+  width: max-content;
+}

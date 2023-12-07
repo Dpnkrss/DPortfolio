@@ -1,0 +1,64 @@
+.navbar {
+  background: rgb(12, 12, 12);
+  height: 5rem;
+  width: 100vw;
+  margin: 0;
+  max-width: 80rem;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+.logo {
+  object-fit: cover;
+  height: 5rem;
+  width: 5.5rem;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.desktopMenuListItem {
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.active {
+  color: yellow;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid yellow;
+}
+
+.desktopMenuListItem:hover {
+  color: yellow;
+  padding-bottom: 0.2rem;
+  border-bottom: 4px solid yellow;
+  border-radius: 0.5rem;
+}
+
+.desktopMenuBtn {
+  background: white;
+  color: black;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  border-radius: 1rem;
+}
+
+.desktopMenuImg {
+  object-fit: cover;
+  height: 1rem;
+  width: 1rem;
+  margin: 1rem;
+}
+
+.active {
+  color: yellow;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid yellow;
+}
