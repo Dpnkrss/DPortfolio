@@ -130,6 +130,13 @@
   display: inline-block;
 }
 
+.heading {
+  font-size: 2rem;
+  font-weight: 400;
+  padding-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
 .frontEnd {
   overflow: hidden;
   margin: 10px;

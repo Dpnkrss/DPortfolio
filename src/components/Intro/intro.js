@@ -1,6 +1,6 @@
 import React from 'react';
 import './intro.css';
-import bg from '../../assets/image.jpg';
+import bg from '../../assets/image-PhotoRoom.png';
 import btnImg from '../../assets/hireme.svg';
 import { Link } from 'react-scroll';
 
@@ -20,7 +20,16 @@ const Intro = () => {
         <Link>
           <button className='btn'>
             <img src={btnImg} alt='hireme' className='btnImg' />
-            <span className='Hire'>Hire Me</span>
+            <span
+              className='Hire'
+              onClick={() =>
+                document
+                  .getElementById('contact')
+                  .scrollIntoView({ behavior: 'smooth' })
+              }
+            >
+              Hire Me
+            </span>
           </button>
         </Link>
       </div>

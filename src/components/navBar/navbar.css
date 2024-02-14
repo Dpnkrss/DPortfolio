@@ -40,6 +40,7 @@
 }
 
 .desktopMenuBtn {
+  cursor: pointer;
   background: white;
   color: black;
   border: none;
@@ -51,6 +52,7 @@
 }
 
 .desktopMenuImg {
+  cursor: pointer;
   object-fit: cover;
   height: 1rem;
   width: 1rem;

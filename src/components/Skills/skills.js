@@ -19,7 +19,10 @@ const Skills = () => {
           <img src={Appdesign} alt='UIDesign' className='skillBarImg' />
           <div className='skillBarText'>
             <h2>UI/UX design </h2>
-            <p>This is a demotext</p>
+            <p>
+              Crafting intuitive and visually compelling user experiences
+              tailored for engaging digital landscapes
+            </p>
           </div>
         </div>
 
@@ -27,7 +30,10 @@ const Skills = () => {
           <img src={WebDesign} alt='WebDesign' className='skillBarImg' />
           <div className='skillBarText'>
             <h2>Website design & Scripting </h2>
-            <p>This is a demotext</p>
+            <p>
+              Building responsive and dynamic websites with a focus on seamless
+              functionality and user-centric scriptingt
+            </p>
           </div>
         </div>
 
@@ -35,12 +41,16 @@ const Skills = () => {
           <img src={UIDesign} alt='Appdesign' className='skillBarImg' />
           <div className='skillBarText'>
             <h2>App Design</h2>
-            <p>You can write text related to mobile apps</p>
+            <p>
+              Designing sleek, user-friendly mobile responsive interfaces that
+              streamline navigation and enhance user engagement
+            </p>
           </div>
         </div>
       </div>
 
       <section id='skillList'>
+        <div className='heading'>What I know</div>
         <div className='frontEnd'>
           <h2> Frontend </h2> <br />
           <div class='innerbox'>
@@ -86,7 +96,6 @@ const Skills = () => {
             <span class='rounded-md '>Kubernetes</span>
             <br /> <br />
             <span class='rounded-md '>Jenkins</span>
-            <span class='rounded-md'>Docker</span>
             <span class='rounded-md'>AWS</span> <br />
             <br />
             <span class=' '> </span> <br />
