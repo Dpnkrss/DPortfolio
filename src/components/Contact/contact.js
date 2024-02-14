@@ -36,7 +36,7 @@ const Contact = () => {
       <div id='contact'>
         <h1 className='contactPageTitle'>Contact Me</h1>
         <span className='contactDesc'>
-          Please fill out the form below to discuss any work oppertunities.
+          Please fill out the form below to discuss any work opportunities.
         </span>
         <form className='contactForm' ref={form} onSubmit={sendEmail}>
           <input
